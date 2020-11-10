@@ -54,31 +54,6 @@ body {
   width: 19%;
 }
 
-@media screen and (max-width: 600px) {
-  .btn-print {
-    width: 100%;
-    margin: 0 auto;
-    width: 100%;
-    margin-left: 0;
-    position: fixed;
-    bottom: -4px;
-  }
-  .btn-print button {
-    font-size: 15px;
-    height: 30px;
-  }
-  .Car-Details .col {
-    display: block;
-    width: 100%;
-  }
-  .car-details .col {
-    display: inline;
-  }
-  h2 {
-    font-size: 10px;
-  }
-}
-
 .row {
   width: 100%;
   margin-left: 0;
@@ -109,8 +84,9 @@ label {
   padding: 1%;
 }
 .Total-text h6 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 0;
+  font-weight: 700;
 }
 .Material-details,
 .Manopera-details {
@@ -122,13 +98,13 @@ label {
 }
 
 h5 {
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 100;
   color: black;
 }
 h2 {
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 .Prices {
@@ -147,7 +123,7 @@ h2 {
 }
 .ComandaNr label,
 .ComandaNr input {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   height: 70%;
   line-height: 0.7em;
@@ -162,11 +138,21 @@ h2 {
 .Car-Details label,
 .material-details label,
 .manopera-details label {
-  font-size: 12px;
+  font-size: 18px;
+  color: black;
+}
+.car-details label,
+.Car-Details label {
+  font-weight: 400;
+}
+.car-details input,
+.Car-Details input {
+  font-size: 18px;
+  font-weight: 500;
   color: black;
 }
 Table td {
-  font-size: 15px;
+  font-size: 20px;
   color: black;
 }
 .table > tbody > tr > td {
@@ -176,12 +162,6 @@ Table td {
 .table td,
 .table > tbody > tr > td {
   padding-left: 0;
-}
-.car-details input,
-.Car-Details input {
-  font-size: 12px;
-  font-weight: 500;
-  color: black;
 }
 
 .material-details input,
@@ -206,13 +186,13 @@ textarea,
   box-shadow: none !important;
 }
 h3 {
-  font-size: 15px;
+  font-size: 22px;
   margin-left: 15px;
   margin-bottom: 10px;
   color: black;
 }
 .Text h5 input {
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 100;
   border-radius: 4px;
   width: 5%;
@@ -306,7 +286,7 @@ thead {
 td,
 th {
   position: relative;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .removeMatRow,
@@ -357,17 +337,40 @@ img {
   width: 70%;
 }
 .Provider-Client p {
-  font-size: 12px;
+  font-size: 20px;
 }
-.Car-Details .col {
+.Provider-Client input {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Car-Details .col1 {
   padding-left: 0;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 18% 70%;
+}
+.car-details .col {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 45% 55%;
+}
+.car-details .col3 {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 45% 10%;
 }
 
 .Manopera-details input,
 .Manopera-details td,
 .Material-details input,
 .Material-details td {
-  font-size: 12px;
+  font-size: 15px;
+}
+
+.Material-details th,
+.Manopera-details th {
+  font-weight: 500;
 }
 
 .Manopera-details a:focus,
@@ -385,6 +388,38 @@ img {
   }
 
   .Total-text {
-    background-color: #5c5c5c !important;
+    background-color: #030520 !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Provider-Client .row p {
+    font-size: 12px;
+  }
+  .btn-print {
+    width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 0;
+    position: fixed;
+    bottom: -4px;
+  }
+  .btn-print button {
+    font-size: 15px;
+    height: 30px;
+  }
+  .Car-Details .col {
+    display: block;
+    width: 100%;
+  }
+  .car-details .col {
+    display: inline;
+  }
+  h2 {
+    font-size: 10px;
+  }
+
+  .Car-Details .col1 {
+    display: inline;
+    width: 100%;
   }
 }
