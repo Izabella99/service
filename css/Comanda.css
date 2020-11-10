@@ -387,9 +387,7 @@ img {
     display: none !important;
   }
 
-  .Total-text {
-    background-color: #030520 !important;
-  }
+  
 }
 @media screen and (max-width: 600px) {
   .Provider-Client .row p {
