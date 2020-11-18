@@ -1,0 +1,65 @@
+body {
+  background-color: #eeeeee;
+}
+
+.page-container {
+  width: 65%;
+  margin-left: 13%;
+  margin-top: 0.5%;
+}
+
+.hero {
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.documents {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px;
+}
+
+.card a {
+  text-align: center;
+  color: #202020;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card {
+  border-radius: 20px;
+  height: 200px;
+}
+.card-top {
+  height: 65%;
+}
+.card-body {
+  text-align: center;
+  height: 10%;
+}
+.card-img-top {
+  width: 30%;
+  filter: #cb0303;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  .page-container {
+    width: 100%;
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .documents {
+    width: 100%;
+    padding: 10px;
+  }
+  .hero {
+    width: 100%;
+  }
+}
