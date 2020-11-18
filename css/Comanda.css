@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(194, 194, 194);
+  background-color: #eeeeee;
 }
 .Comanda {
   border-radius: 8px;
@@ -20,18 +20,18 @@ body {
 }
 
 .btn-primary {
-  background-color: #ad0d0d;
+  background-color: #cb0303;
   color: white;
   border: none;
 }
 .btn-primary:not(:disabled):not(.disabled):active {
-  background-color: #ad0d0d;
+  background-color: #cb0303;
   color: white;
   border: none;
 }
 
 .btn-print button {
-  background-color: #ad0d0d;
+  background-color: #cb0303;
   width: 100%;
   height: 50px;
   border: none;
@@ -43,7 +43,7 @@ body {
 .btn-print {
   margin: 0 auto;
   width: 10%;
-  margin-left: 45%;
+  margin-left: 27%;
   position: fixed;
   bottom: -4px;
 }
@@ -79,7 +79,7 @@ label {
   display: grid;
   grid-template-columns: 75% 25%;
   text-align: end;
-  background-color: #ad0d0d;
+  background-color: #cb0303;
   color: white;
   padding: 1%;
 }
@@ -306,7 +306,7 @@ th {
 }
 
 .control {
-  background: #ad0d0d;
+  background: #cb0303;
   color: white;
 }
 
@@ -387,23 +387,31 @@ img {
     display: none !important;
   }
 
-  
+  .Total-text {
+    background-color: #030520 !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .Provider-Client .row p {
     font-size: 12px;
   }
   .btn-print {
-    width: 100%;
-    margin: 0 auto;
-    width: 100%;
-    margin-left: 0;
+    width: 25%;
+
+    margin-left: 40%;
     position: fixed;
-    bottom: -4px;
+    bottom: 20px;
+
+    position: fixed;
+    z-index: 83;
   }
   .btn-print button {
     font-size: 15px;
-    height: 30px;
+    height: 70px;
+    width: 70px;
+    border: 3px solid #cb0303;
+    background-color: white;
+    color: rgba(53, 53, 53, 0.933);
   }
   .Car-Details .col {
     display: block;
@@ -419,5 +427,20 @@ img {
   .Car-Details .col1 {
     display: inline;
     width: 100%;
+  }
+}
+
+@media print {
+  #divToPrint {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
