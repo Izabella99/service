@@ -33,9 +33,9 @@
   <div class="sidenav" >  
     <img class="logo" src="logo.jpg" alt="Logo"> 
     
-      <a href="index.html"> &#8962; HOME</a>
-      <a href="#">&#9881; SETTINGS</a>
-      <a href="#">&#128462; DOCUMENTS</a>
+      <a href="index.html"> <img src="house.svg" > HOME</a>
+      <a href="#"><img src="gear.svg" > SETTINGS</a>
+      <a href="#"><img src="document.svg" >DOCUMENTS</a>
      
     </div>
  
@@ -232,8 +232,8 @@
                       <td class="CodArticol"><a class="control removeMatRow" href="#">x</a><input type="text" value=""/></td>
                       <td class="MatDesc"><input type="text" value="" /></td>
                       <td class="UM"><input type="text" value="" /></td>
-                      <td class="MatCant"><input type="text" value="" /></td>
-                      <td class="pfTVA"><input type="text" value="" style="text-align: end;"/></td>
+                      <td class="MatCant"><input type="number" value="" pattern="[-+]?[0-9]*[.,]?[0-9]+" /></td>
+                      <td class="pfTVA"><input type="number" value="" pattern="[-+]?[0-9]*[.,]?[0-9]+"style="text-align: end;"/></td>
                       <td class="MatvalfTVA" style="text-align: end;"></td>
                       <td class="MatvalcuTVA" style="text-align: end;"></td>
                     </tr>
@@ -265,10 +265,12 @@
                     <tr>
                       <td class="ManDesc"><a class="control removeManRow" href="#">x</a><input type="text" value=""/></td>
                       <td class="Mecanic"><input type="text" value="" /></td>
-                      <td class="Norma"><input type="text" value="" /></td>
-                      <td class="Tarif"><input type="text" value="" /></td>
-                      <td class="ManCant"><input type="text" value="" /></td>
-                      <td class="TotalNorma" style="text-align: end;"><input type="text" value="" style="text-align: end;"/></td>
+                      <td class="Norma"><input type="number" value="" pattern="[-+]?[0-9]*[.,]?[0-9]+"/></td>
+                      <td class="Tarif"><input type="number" value="" pattern="[-+]?[0-9]*[.,]?[0-9]+" /></td>
+                      <td class="ManCant"><input type="number" value="" pattern="[-+]?[0-9]*[.,]?[0-9]+"/></td>
+                      <td class="TotalNorma" style="text-align: end;">
+                        <input type="text" value="" style="text-align: end;"/>
+                      </td>
                       <td class="ManvalfTVA" style="text-align: end;"></td>
                       <td class="ManvalcuTVA" style="text-align: end;"></td>
                     </tr>
