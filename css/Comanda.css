@@ -286,7 +286,7 @@ thead {
 td,
 th {
   position: relative;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .removeMatRow,
@@ -427,6 +427,11 @@ img {
   .Car-Details .col1 {
     display: inline;
     width: 100%;
+  }
+  table th,
+  table td {
+    font-size: 11px;
+    padding-right: 15px;
   }
 }
 
