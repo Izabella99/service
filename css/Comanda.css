@@ -446,6 +446,12 @@ input[type="number"] {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .btn-print {
+    margin-left: 40%;
+  }
+}
+
 @media print {
   #divToPrint {
     background-color: white;
