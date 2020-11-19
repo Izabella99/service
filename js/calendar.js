@@ -68,7 +68,7 @@ $(function(){
         t=e.getFullYear();
         n=e.getMonth()+1;
     }
-    var e=300;
+    var e=250;
     var t=2013;
     var n=9;
     var r=[];
