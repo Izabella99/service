@@ -46,14 +46,22 @@ body {
   display: block;
   margin-top: 30%;
 }
+
 @media screen and (max-width: 1238px) {
   .page-container {
+    margin-left: 15%;
+    width: auto;
+  }
+}
+@media screen and (max-width: 970px) {
+  .page-container {
     width: 100%;
+    margin: 0;
   }
 }
 @media screen and (max-width: 600px) {
   .page-container {
-    width: 100%;
+    width: auto;
     margin: 0;
   }
   .card {
