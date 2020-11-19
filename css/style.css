@@ -3,7 +3,7 @@ body {
 }
 
 .page-container {
-  width: 65%;
+  width: 69%;
   margin-left: 13%;
   margin-top: 0.5%;
 }
@@ -46,7 +46,11 @@ body {
   display: block;
   margin-top: 30%;
 }
-
+@media screen and (max-width: 1238px) {
+  .page-container {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 600px) {
   .page-container {
     width: 100%;
