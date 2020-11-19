@@ -98,6 +98,27 @@ li {
   }
 }
 
+@media screen and (max-width: 970px) {
+  .sidenav {
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    margin-top: auto;
+    margin-bottom: 0;
+    height: 8%;
+    width: 100%;
+    display: flex;
+  }
+  .sidenav a {
+    display: inline;
+    padding: 0px 0px 0px 20%;
+  }
+
+  .sidenav a:last-child {
+    display: none;
+  }
+}
+
 @media print {
   .sidenav {
     display: none !important;
