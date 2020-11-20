@@ -19,7 +19,7 @@ body {
     /*   display: none;
     visibility: hidden;*/
     height: fit-content;
-    position: relative;
+    position: inherit;
     z-index: -1;
     display: block;
     margin-left: 15%;
