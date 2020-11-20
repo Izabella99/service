@@ -125,14 +125,33 @@ h2 {
 .ComandaNr label,
 .ComandaNr input {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: bold;
   height: 70%;
   line-height: 0.7em;
   color: black;
 }
 
-.ComandaNr {
+.Data label {
+  font-size: 18px;
+  font-weight: 500;
+  height: 70%;
+  line-height: 0.7em;
+  color: black;
+  margin-top: 8px;
+}
+.Data input {
+  font-size: 18px;
+  padding: 0 0 5px 5px;
+  float: right;
+}
+.ComandaNr,
+.Data {
   margin-bottom: 1%;
+  display: inline;
+}
+.Data {
+  float: right;
+  text-align: end;
 }
 
 .car-details label,
@@ -158,6 +177,7 @@ Table td {
 }
 .table > tbody > tr > td {
   border: 1px solid white;
+  padding: 3px;
 }
 .table th,
 .table td,
@@ -205,8 +225,7 @@ h3 {
  * HEADER
  */
 header {
-  margin: 1rem 0 0 0;
-  padding: 0 0 2rem 0;
+  padding: 0 0 1rem 0;
   border-bottom: 1pt solid;
 }
 
@@ -230,9 +249,11 @@ header a {
 }
 .me {
   width: 30%;
+  margin-top: 9px;
 }
 .info {
   width: 30%;
+  margin-top: 9px;
 }
 .col,
 [class*="col-"] {
@@ -334,8 +355,8 @@ input:hover {
   background: rgba(white, 0.3);
   border: 1px solid;
 }
-img {
-  width: 70%;
+.logoholder img {
+  width: 56%;
 }
 .Provider-Client p {
   font-size: 20px;
@@ -409,7 +430,7 @@ input[type="number"] {
   .btn-print {
     width: 25%;
 
-    margin-left: 44%;
+    margin-left: 46%;
     position: fixed;
     bottom: 20px;
 
@@ -448,7 +469,20 @@ input[type="number"] {
 
 @media screen and (max-width: 600px) {
   .btn-print {
-    margin-left: 40%;
+    margin-left: 44%;
+  }
+
+  .Data input {
+    float: none;
+  }
+
+  .Data {
+    float: none;
+    text-align: start;
+    display: block;
+  }
+  .ComandaNr {
+    display: block;
   }
 }
 
