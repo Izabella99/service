@@ -68,6 +68,9 @@ li {
   .sidenav img {
     display: none;
   }
+  .sidenav a:hover {
+    background-color: none;
+  }
 }
 
 @media screen and (max-width: 970px) {
@@ -86,7 +89,7 @@ li {
     padding: 0px;
     justify-content: space-evenly;
     margin-bottom: 12px;
-    hover:none;
+    
   }
 
   .logo {
