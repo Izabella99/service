@@ -34,8 +34,9 @@
     <img class="logo" src="logo.jpg" alt="Logo"> 
     
       <a href="index.html"> <img src="house.svg" ><li>HOME</li> </a>
+      <a href="comanda.html"><img src="document.svg" ><li>COMANDA</li></a>
+      <a href="Deviz.html"><img src="document.svg" ><li>DEVIZ</li></a>
       <a href="#"><img src="gear.svg" ><li> SETTINGS</li></a>
-      <a href="#"><img src="document.svg" ><li>DOCUMENTS</li></a>
      
     </div>
  
@@ -56,14 +57,14 @@
                 
                 
                   <div class="me" contenteditable>
-                    <p    style="margin-top: 10%;" >
+                    <p  >
                       <strong>SC RELIA IMPEX SRL</strong><br>
                       Porumbenii Mari nr. 421<br>
                       537414 HARGHITA<br>
                     </p>
                   </div><!--.col-->
-                  <div class="info">
-                    <p style="margin-top: 10%;" contenteditable>
+                  <div class="info"contenteditable>
+                    <p >
                       Cod fiscal: RO14985920 <br>
                       Nr. ord: J08/1462/2002 <br>
                       Tel: 0748-50-28-23<br>
@@ -89,14 +90,23 @@
                 </div><!--.row-->
                 
             </div>
-              <div class="ComandaNr"   style="display: flex;">
+              <div class="ComandaNr"   >
                       <label  >Comanda nr.</label>
                       <input 
                         name="ComNr"
                         type="text"
                        style="width: 10%;"
                       >
+                      
               </div>
+              <div class="Data"  >
+                <label  >Data</label>
+                <input 
+                  name="Data"
+                  type="date"
+                 style="width: 70%;"
+                >
+        </div>
             
             
         
@@ -317,7 +327,7 @@
       
         </div>
         <div class="btn-print">
-           <button class="glyphicon glyphicon-print"  type="submit" value="Print" onclick="myFunction();" > Print</button>
+           <button class="glyphicon glyphicon-print"  type="submit" value="Print" onclick="Pdf();" > Print</button>
 
           </div>
         
@@ -325,16 +335,7 @@
    </div>
 
    <div class="right-sidenav" >  
-    <div id="calendar" >
-  <div id="calendar_header" >
-    <i class="icon-chevron-left" style=" transform: rotate(167deg);margin-top: 6px;">&#8250;</i>         
-     <h1></h1>
-     <i class="icon-chevron-right" style=" transform: rotate(-14deg);;margin-top: -2px;">&#8250;</i>         
-    </div>
-  <div id="calendar_weekdays"></div>
-  <div id="calendar_content" ></div>
-
- </div>
+    
      
     </div>
 
@@ -359,7 +360,7 @@
 <script type="text/javascript" src="js/calculations.js"> </script>
 <script type="text/javascript" src="js/pdf.js"> </script>
 <script type="text/javascript" src="js/sidebar.js"> </script>
-<script type="text/javascript" src="js/calendar.js"> </script>
+
 
 
 </body>
