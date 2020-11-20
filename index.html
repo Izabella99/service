@@ -34,9 +34,11 @@
     <img class="logo" src="logo.jpg" alt="Logo"> 
     
       <a href="index.html"> <img src="house.svg" ><li>HOME</li> </a>
-      <a href="#"><img src="gear.svg" ><li> SETTINGS</li></a>
-      <a href="#"><img src="document.svg" ><li>DOCUMENTS</li></a>
      
+      <a href="Deviz.html"><img src="document.svg" ><li>DEVIZ</li></a>
+      <a href="comanda.html"><img src="document.svg" ><li>COMANDA</li></a>
+      <a href="#"><img src="gear.svg" ><li> SETTINGS</li></a>
+      <a href="calendar.html"><img src="" ><li>Calendar</li></a>
     </div>
  
    
@@ -64,18 +66,52 @@
       </div>
         
    </div>
+
+  
+
   </div>
    
    
     <div class="right-sidenav" >  
-      <div id="calendar" >
-    <div id="calendar_header" >
-      <i class="icon-chevron-left" style=" transform: rotate(167deg);margin-top: 6px;">&#8250;</i>         
-       <h1></h1>
-       <i class="icon-chevron-right" style=" transform: rotate(-14deg);;margin-top: -2px;">&#8250;</i>         
-      </div>
-    <div id="calendar_weekdays"></div>
-    <div id="calendar_content" ></div>
+      <div id="calendar"></div>
+
+<div id='formDiv'>
+  <fieldset style='padding:0 20px 20px 20px'>
+    <legend>
+      <h2> Add An Event </h2>
+    </legend>
+    <form name='myForm' onsubmit="myFunc()">
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="eventName" id="eventName" required></td>
+        </tr>
+        <tr>
+          <td>Type:</td>
+          <td style="display: flex;">
+            <select class="selectMenu" id="eventType" name="eventType" onchange="displayCol()" required>
+            <option value="">Select One</option>
+            <option value="Service">Service</option>
+            <option value="Oljcsere">Olajcsere</option>
+            <option value="Gumicsere">Gumicsere</option>
+            <option value="Test">Test</option>
+            <option value="Diagnosztika">Diagnosztika</option>
+            </select>
+            <div id="eventColor"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td><input type="date" name="eventDate" id="eventDate" required></td>
+        </tr>
+        <tr>
+          <td><input type="submit" id="addEventBTN" value="Add Event"></td>
+          <td><button id="closeBTN" onclick="closeForm()" form="noForm">Close Window</button></td>
+        </tr>
+      </table>
+    </form>
+  </fieldset>
+</div>
 
    </div>
        
@@ -91,7 +127,7 @@
 
 
 
-
+     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/jquery-ui.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -103,6 +139,8 @@
 <script type="text/javascript" src="js/calculations.js"> </script>
 <script type="text/javascript" src="js/pdf.js"> </script>
 <script type="text/javascript" src="js/sidebar.js"> </script>
-<script type="text/javascript" src="js/calendar.js"> </script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script type="text/javascript" src="js/calendar.js"> </script>
 </body>
 </html>
