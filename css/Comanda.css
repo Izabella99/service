@@ -484,6 +484,9 @@ input[type="number"] {
   .ComandaNr {
     display: block;
   }
+  #divToPrint {
+    padding: 0;
+  }
 }
 
 @media print {
