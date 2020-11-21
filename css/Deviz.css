@@ -5,6 +5,10 @@ iframe {
 body {
   background-color: #eeeeee;
 }
+.page-container {
+  width: auto;
+  margin-top: 0.5%;
+}
 .Deviz {
   border-radius: 8px;
   /*-webkit-box-shadow: 0px 0px 26px 0px rgba(130, 128, 130, 1);
@@ -46,10 +50,10 @@ body {
 }
 .btn-print {
   margin: 0 auto;
-  width: 10%;
-  margin-left: 27%;
+  width: 12%;
+  margin-left: 37%;
   position: fixed;
-  bottom: -4px;
+  bottom: 4px;
 }
 .Car-Details .col2 {
   width: 40%;
@@ -151,7 +155,6 @@ h2 {
 .DevizNr,
 .Data {
   margin-bottom: 1%;
-  
 }
 .Data {
   float: right;
@@ -159,9 +162,7 @@ h2 {
 }
 
 .car-details label,
-.Car-Details label,
-.material-details label,
-.manopera-details label {
+.Car-Details label {
   font-size: 18px;
   color: black;
 }
@@ -187,12 +188,6 @@ Table td {
 .table td,
 .table > tbody > tr > td {
   padding-left: 0;
-}
-
-.material-details input,
-.manopera-details input {
-  font-size: 12px;
-  color: black;
 }
 
 .form-group {
@@ -387,13 +382,6 @@ input:hover {
   grid-template-columns: 45% 10%;
 }
 
-.Constatare {
-  margin-top: 30px;
-}
-.Constatare {
-  font-size: 17px;
-}
-
 .Manopera-details input,
 .Manopera-details td,
 .Material-details input,
@@ -443,15 +431,15 @@ input[type="number"] {
 
     margin-left: 46%;
     position: fixed;
-    bottom: 20px;
+    bottom: 37px;
 
     position: fixed;
     z-index: 83;
   }
   .btn-print button {
     font-size: 15px;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border: 3px solid #cb0303;
     background-color: white;
     color: rgba(53, 53, 53, 0.933);
@@ -471,8 +459,10 @@ input[type="number"] {
     display: inline;
     width: 100%;
   }
-  table th,
-  table td {
+  .Material-details th,
+  .Manopera-details th,
+  .Material-details td,
+  .Manopera-details td {
     font-size: 11px;
     padding-right: 15px;
   }
@@ -503,11 +493,29 @@ input[type="number"] {
 @media print {
   #divToPrint {
     background-color: white;
-    height: 100%;
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    page-break-inside: avoid;
+  }
+  .Manopera-details {
+    page-break-inside: avoid;
+  }
+  .page-container {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .Sidenav {
+    display: none;
+  }
+
+  .Provider-Client p {
+    line-height: 2.7rem;
+  }
+  .End {
+    page-break-before: auto;
+    page-break-inside: avoid;
   }
 }
